@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <title>Festival de la cocina tradicional Picantino</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <include src="./views/navbar.html"></include>
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-8">
+      <h1 class="text-4xl md:text-5xl text-center mb-12 mt-13 font-sans">
+        Las páginas realizadas para PEC3.
+      </h1>
+
+      <!-- Cards -->
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Card 1: Participants -->
+        <a
+          href="participants.html"
+          class="group block bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <div class="flex items-center p-4">
+            <img
+              src="/src/assets/images/chef.jpg"
+              alt="Participants"
+              class="w-20 h-20 rounded-full mr-4 transform transition duration-300 group-hover:rotate-3 group-hover:scale-110"
+            />
+
+            <div>
+              <h2 class="text-xl font-semibold mb-1">Participants</h2>
+              <p class="text-gray-600">Página hecha con Tailwind.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2: Agenda -->
+        <a
+          href="agenda.html"
+          class="group block bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <div class="flex items-center p-4">
+            <img
+              src="/src/assets/images/calendar.jpg"
+              alt="Agenda"
+              class="w-20 h-20 rounded-full mr-4 transform transition duration-300 group-hover:rotate-3 group-hover:scale-110"
+            />
+            <div>
+              <h2 class="text-xl font-semibold mb-1">Agenda</h2>
+              <p class="text-gray-600">Página hecha con Tailwind.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3: AI Generated Page -->
+        <a
+          href="ai-page.html"
+          class="group block bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          <div class="flex items-center p-4">
+            <img
+              src="/src/assets/images/robot.jpg"
+              alt="AI Page"
+              class="w-20 h-20 rounded-full mr-4 transform transition duration-300 group-hover:rotate-3 group-hover:scale-110"
+            />
+            <div>
+              <h2 class="text-xl font-semibold mb-1">AI Page</h2>
+              <p class="text-gray-600">
+                Página generada automáticamente por IA.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

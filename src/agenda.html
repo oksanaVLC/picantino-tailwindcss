@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+    <title>Festival de la cocina tradicional Picantino</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <include src="./views/navbar.html"></include>
+
+    <!-- Hero -->
+    <section class="relative">
+      <img
+        src="./assets/images/1.png"
+        alt="poster"
+        class="w-full h-auto object-cover"
+      />
+      <div
+        class="absolute inset-0 flex pt-8 items-center justify-center text-center text-5xl md:text-7xl font-bold text-black font-henny uppercase"
+      >
+        Jornadas <br />2025
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 md:px-6 py-12 text-center">
+      <article class="space-y-8">
+        <h1 class="text-4xl md:text-5xl font-henny font-bold text-center">
+          Picantino Festival
+        </h1>
+
+        <p class="leading-normal">
+          Las Jornadas Gastronómicas del Festival Picantino se celebran
+          anualmente con el objetivo de difundir la cultura culinaria local.
+          Durante estas jornadas, chefs reconocidos comparten sus conocimientos
+          y técnicas con los asistentes.
+        </p>
+
+        <picture>
+          <source srcset="./assets/images/agenda1.webp" type="image/webp" />
+          <img
+            src="./assets/images/agenda1-small.jpg"
+            alt="Chefs cocinando"
+            class="w-full rounded shadow-md"
+          />
+        </picture>
+
+        <p class="leading-normal">
+          Los participantes tienen la oportunidad de asistir a talleres de
+          cocina, degustaciones y charlas sobre innovación gastronómica. Cada
+          actividad está diseñada para involucrar a todos los públicos, desde
+          aficionados hasta profesionales.
+        </p>
+
+        <blockquote
+          class="border-l-4 bg-[rgb(253,246,227)] border-orange-400 pl-4 italic text-gray-700 text-left"
+        >
+          "La gastronomía es un arte que combina tradición e innovación, y estas
+          jornadas lo demuestran." – Chef invitado
+        </blockquote>
+
+        <p class="leading-normal text-left">
+          Entre las actividades destacadas, se incluyen:
+        </p>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-3">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+            >
+              1
+            </span>
+            <span>Talleres de cocina mediterránea</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+            >
+              2
+            </span>
+            <span>Demostraciones de repostería avanzada</span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+            >
+              3
+            </span>
+            <span>Catas de productos locales</span>
+          </li>
+        </ul>
+
+        <picture>
+          <source srcset="./assets/images/pizza.webp" type="image/webp" />
+          <img
+            src="./assets/images/pizza-small.jpg"
+            alt="Mesa con productos locales"
+            class="w-full rounded shadow-md"
+          />
+        </picture>
+
+        <p class="leading-normal">
+          El festival también promueve la sostenibilidad y el uso responsable de
+          los recursos, fomentando prácticas respetuosas con el medio ambiente y
+          la economía local. Además, los asistentes pueden participar en
+          concursos y premios que incentivan la creatividad.
+        </p>
+
+        <p class="leading-normal">
+          Estas jornadas son un punto de encuentro para amantes de la cocina y
+          ofrecen una experiencia educativa y cultural única que pone en valor
+          la riqueza gastronómica de nuestra región.
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

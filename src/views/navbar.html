@@ -1,0 +1,156 @@
+<header class="bg-white fixed w-full z-50 shadow-md">
+  <nav class="container mx-auto relative flex items-center justify-between p-2">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img
+        src="/src/assets/images/logo.png"
+        alt="Mi Logo"
+        class="h-10 w-auto mr-7"
+      />
+    </a>
+
+    <button
+      id="menu-btn"
+      class="lg:hidden text-gray-700 focus:outline-none"
+      aria-label="Abrir menú"
+    >
+      <!-- Hamburger -->
+      <svg
+        id="icon-open"
+        class="w-6 h-6 block"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+
+      <!-- Close -->
+      <svg
+        id="icon-close"
+        class="w-6 h-6 hidden"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <div
+      id="menu"
+      class="hidden absolute top-full left-0 pt-15 lg:pt-0 w-full bg-white z-50 lg:static lg:flex lg:flex-1 lg:justify-center lg:items-center lg:space-x-6"
+    >
+      <ul class="flex flex-col lg:flex-row lg:space-x-6">
+        <li>
+          <a href="./index.html" class="nav-link">Inicio</a>
+        </li>
+        <li>
+          <a href="./participants.html" class="nav-link">Participantes</a>
+        </li>
+
+        <li class="relative group">
+          <a href="./agenda.html" class="nav-link flex items-center">
+            Agenda
+            <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.23 8.27a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <ul
+            class="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-md min-w-37.5 z-50"
+          >
+            <li>
+              <a href="./agenda.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Eventos</a
+              >
+            </li>
+            <li><hr class="border-gray-200" /></li>
+            <li>
+              <a href="./agenda.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Prensa</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="./ai-page.html" class="nav-link">Página IA</a>
+        </li>
+      </ul>
+
+      <!-- BUSCADOR -->
+      <form class="flex items-center mt-3 lg:mt-0">
+        <input
+          type="search"
+          placeholder="..."
+          class="border border-gray-300 rounded-l ml-6 px-3 py-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 w-42 lg:w-48"
+        />
+        <button
+          type="submit"
+          class="bg-green-600 text-white px-3 py-1 rounded-r hover:bg-green-700"
+        >
+          Buscar
+        </button>
+      </form>
+
+      <!-- SOCIAL LINKS -->
+      <div
+        class="flex items-center space-x-3 ml-7 mt-10 mb-60 lg:mt-0 text-gray-700"
+      >
+        <!-- Instagram -->
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          aria-label="Instagram"
+          class="hover:text-green-600 transition-colors"
+        >
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.88a1.13 1.13 0 110 2.25 1.13 1.13 0 010-2.25z"
+            />
+          </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          aria-label="YouTube"
+          class="hover:text-green-600 transition-colors"
+        >
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M23.5 6.2a3 3 0 00-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6a3 3 0 00-2.1 2.1A31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"
+            />
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          aria-label="Facebook"
+          class="hover:text-green-600 transition-colors"
+        >
+          <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M22 12a10 10 0 10-11.6 9.9v-7h-2.3V12h2.3V9.8c0-2.3 1.4-3.6 3.5-3.6 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12h2.5l-.4 2.9h-2.1v7A10 10 0 0022 12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>

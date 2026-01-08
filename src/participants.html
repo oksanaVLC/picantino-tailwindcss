@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <title>Festival de la cocina tradicional Picantino</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <include src="./views/navbar.html"></include>
+    <main class="pt-24 md:pt-32 p-6 max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-10">
+        Participantes del Festival
+      </h1>
+
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="card">
+          <img src="./assets/images/1p.jpg" alt="Claudia Flores" />
+          <h2>Claudia Flores</h2>
+          <p>Cocina fusión mediterránea</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/3p.jpg" alt="María Serrano" />
+          <h2>María Serrano</h2>
+          <p>Alta repostería</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/2p.jpg" alt="DJ SpiceMix" />
+          <h2>DJ SpiceMix</h2>
+          <p>Música electrónica</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/4p.jpg" alt="María Flores" />
+          <h2>María Flores</h2>
+          <p>Cocina fusión mediterránea</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/5p.jpg" alt="Hector Serrano" />
+          <h2>Hector Serrano</h2>
+          <p>Alta repostería</p>
+        </div>
+
+        <div class="card">
+          <img src="./assets/images/6p.jpg" alt="David Montaña" />
+          <h2>David Montaña</h2>
+          <p>Cocina mediterránea</p>
+        </div>
+      </div>
+
+      <button
+        class="mt-8 px-6 py-2 bg-green-600 text-white rounded hover:bg-green-700 block mx-auto"
+      >
+        Mostrar más
+      </button>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Pompiere", system-ui, sans-serif;
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-family: "Henny Penny", cursive;
+    font-size: 2rem;
+  }
+}
+
+.card {
+  @apply flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md
+         transition-transform duration-300
+         hover:shadow-xl hover:-translate-y-1;
+}
+
+.card img {
+  @apply w-32 h-32 rounded-full mb-4 object-cover border-2 border-gray-300;
+}
+
+.card h3 {
+  @apply text-lg font-semibold;
+}
+
+.card p {
+  @apply text-gray-600;
+}
+
+/* Link base del navbar */
+.nav-link {
+  @apply text-gray-700 hover:text-green-600 transition-colors  px-7 lg:px-0;
+}
+
+/* Links del footer */
+.footer-link {
+  @apply hover:text-green-600 transition-colors;
+}
