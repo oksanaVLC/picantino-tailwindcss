@@ -18,18 +18,7 @@
     <include src="./views/navbar.html"></include>
 
     <!-- Hero -->
-    <section class="relative">
-      <img
-        src="./assets/images/1.png"
-        alt="poster"
-        class="w-full h-auto lg:h-96 object-cover"
-      />
-      <div
-        class="absolute inset-0 flex pt-8 items-center justify-center text-center text-5xl md:text-7xl font-bold text-black font-henny uppercase"
-      >
-        Jornadas <br />2025
-      </div>
-    </section>
+    <include src="./views/hero_agenda.html"></include>
 
     <!-- Main Content -->
     <main class="max-w-6xl mx-auto px-4 md:px-6 py-12 text-center">
@@ -61,37 +50,31 @@
           aficionados hasta profesionales.
         </p>
 
-        <blockquote
-          class="border-l-4 bg-[rgb(253,246,227)] border-orange-400 pl-4 italic text-gray-700"
-        >
-          "La gastronomía es un arte que combina tradición e innovación, y estas
-          jornadas lo demuestran." – Chef invitado
-        </blockquote>
+        <include src="./views/blockquote.html"></include>
 
         <p class="text-left">Entre las actividades destacadas, se incluyen:</p>
-        <ul class="space-y-2 leading-none">
-          <li class="flex items-center gap-3">
+        <ul
+          class="space-y-2 leading-none [&>li]:flex [&>li]:items-start [&>li]:gap-3"
+        >
+          <li>
             <span
               class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+              >1</span
             >
-              1
-            </span>
             <span class="text-md">Talleres de cocina mediterránea</span>
           </li>
-          <li class="flex items-start gap-3">
+          <li>
             <span
               class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+              >2</span
             >
-              2
-            </span>
             <span class="text-md">Demostraciones de repostería avanzada</span>
           </li>
-          <li class="flex items-start gap-3">
+          <li>
             <span
               class="flex h-7 w-7 items-center justify-center rounded-full bg-green-600 text-white text-sm font-bold shrink-0"
+              >3</span
             >
-              3
-            </span>
             <span class="text-md">Catas de productos locales</span>
           </li>
         </ul>
