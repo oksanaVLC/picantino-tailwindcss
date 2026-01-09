@@ -42,3 +42,11 @@
 .footer-link {
   @apply hover:text-green-600 transition-colors;
 }
+
+@theme {
+  --color-green-600: #07974f;
+  --color-uoc-corporate: #000078;
+  --color-uoc-masterbrand: #73edff;
+
+  --font-pompiere: "Pompiere", system-ui, sans-serif;
+}
